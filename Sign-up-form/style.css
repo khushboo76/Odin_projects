@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar with background image */
+.sidebar {
+    flex: 1;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Semi-transparent dark overlay behind the logo */
+.logo-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Norse Bold', sans-serif;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Main form area */
+.main {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Input variations */
+input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+/* Create Account button */
+.create-btn {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.create-btn:hover {
+    background-color: #4d5c3e;
+}
